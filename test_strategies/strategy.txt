@@ -1,0 +1,741 @@
+This sample exam is extremely valuable because it exposes the **actual thinking style** of the real exam writers. 
+
+After analyzing all the questions carefully, here are the **highest-confidence patterns** that are almost certainly going to appear on your real exam.
+
+# MOST IMPORTANT DISCOVERY
+
+The exam is NOT testing memorization.
+
+It is testing whether you consistently choose:
+
+* deterministic systems
+* scoped architecture
+* explicit structure
+* production-safe behavior
+* maintainable workflows
+* low false-positive designs
+* correct orchestration responsibility
+
+The exam LOVES answers that:
+
+* reduce ambiguity
+* preserve observability
+* preserve reliability
+* minimize unnecessary complexity
+* isolate responsibilities correctly
+
+---
+
+# THE 12 BIGGEST EXAM PATTERNS
+
+# 1. DETERMINISTIC > PROMPT-ONLY
+
+## THIS IS VERY HIGH PROBABILITY FOR THE EXAM.
+
+Whenever business-critical behavior exists:
+
+Correct:
+
+* hooks
+* gates
+* prerequisites
+* forced workflows
+* validation
+
+Wrong:
+
+* “just improve the prompt”
+* “add confidence scoring”
+* “use sentiment”
+* “few-shot only”
+
+---
+
+## Example Pattern
+
+### Wrong
+
+“Tell the model to always verify customer identity.”
+
+### Correct
+
+“Block refund/order tools until verified customer ID exists.”
+
+---
+
+# Exam Trigger Words
+
+If you see:
+
+* refunds
+* billing
+* identity
+* permissions
+* escalation
+* policy
+* compliance
+
+→ expect deterministic enforcement.
+
+---
+
+# 2. TOOL DESCRIPTIONS ARE EVERYTHING
+
+## THIS IS VERY HIGH PROBABILITY FOR THE EXAM.
+
+This appeared MANY times.
+
+When tool routing is wrong:
+
+FIRST FIX:
+
+* improve tool descriptions
+
+NOT:
+
+* routing classifier
+* ML model
+* fine-tuning
+* huge prompt
+
+---
+
+# The exam strongly believes:
+
+Tool descriptions are the PRIMARY mechanism for tool selection.
+
+---
+
+# Correct Tool Description Includes
+
+* purpose
+* inputs
+* outputs
+* edge cases
+* boundaries
+* “use when”
+* “do not use when”
+
+---
+
+# HUGE EXAM TRAP
+
+If two tools overlap semantically:
+
+BAD:
+
+* `analyze_content`
+* `analyze_document`
+
+GOOD:
+
+* `extract_web_results`
+* `parse_uploaded_document`
+
+---
+
+# 3. COORDINATOR IS THE BRAIN
+
+## THIS IS VERY HIGH PROBABILITY FOR THE EXAM.
+
+Coordinator responsibilities:
+
+* task decomposition
+* delegation
+* routing
+* synthesis coordination
+* error handling
+* observability
+* context control
+
+Subagents:
+
+* execute specialized work only
+
+---
+
+# Wrong Answers Usually:
+
+* let subagents communicate directly
+* let synthesis bypass coordinator
+* let agents share unrestricted tools
+* let agents self-coordinate
+
+---
+
+# Exam Philosophy
+
+Hub-and-spoke > peer-to-peer agents
+
+---
+
+# 4. SUBAGENTS DO NOT SHARE CONTEXT
+
+## MUST MEMORIZE
+
+Subagents:
+
+* DO NOT inherit parent memory
+* DO NOT inherit prior context
+* DO NOT share state automatically
+
+You MUST:
+
+* explicitly pass findings
+* explicitly pass metadata
+* explicitly pass constraints
+
+---
+
+# Huge Exam Trigger
+
+If question says:
+
+> “subagent missed earlier findings”
+
+Answer usually:
+
+> “explicit context passing”
+
+---
+
+# 5. SCOPED TOOLS > GENERAL TOOLS
+
+## THIS IS VERY HIGH PROBABILITY FOR THE EXAM.
+
+The exam HATES:
+
+* giant generic tools
+* unrestricted agents
+* overpowered tools
+
+---
+
+# Example
+
+BAD:
+
+```txt
+fetch_url
+```
+
+GOOD:
+
+```txt
+load_document
+```
+
+Because:
+
+* constrained
+* validated
+* predictable
+* prevents misuse
+
+---
+
+# Exam Rule
+
+Restrict capability at the interface level.
+
+NOT:
+
+* “tell the model not to misuse the tool”
+
+---
+
+# 6. STRUCTURED ERRORS ARE CRITICAL
+
+## MUST MEMORIZE
+
+Every good error answer includes:
+
+* failure type
+* retryability
+* partial results
+* attempted actions
+* alternatives
+
+---
+
+# Correct Error Pattern
+
+```json
+{
+  "errorCategory": "transient",
+  "isRetryable": true,
+  "partialResults": [],
+  "message": "Timeout while querying patent DB"
+}
+```
+
+---
+
+# Biggest Trap
+
+The exam HATES:
+
+* generic “operation failed”
+* hiding errors
+* empty success results
+* terminating whole workflow
+
+---
+
+# 7. “LOST IN THE MIDDLE” APPEARS A LOT
+
+## THIS IS VERY HIGH PROBABILITY FOR THE EXAM.
+
+When middle findings are ignored:
+
+Correct:
+
+* key summary at beginning
+* section headers
+* structured outputs
+* trimmed context
+
+Wrong:
+
+* bigger model
+* larger context window
+* random ordering
+
+---
+
+# The exam strongly believes:
+
+Structure beats brute force context size.
+
+---
+
+# 8. FEW-SHOT EXAMPLES > BETTER INSTRUCTIONS
+
+## THIS IS VERY HIGH PROBABILITY FOR THE EXAM.
+
+If output consistency is bad:
+
+Correct:
+
+* 2–4 targeted examples
+
+Wrong:
+
+* more prose instructions
+
+---
+
+# Especially Important For
+
+* review format
+* extraction format
+* escalation decisions
+* ambiguous routing
+* actionable feedback
+
+---
+
+# Exam Pattern
+
+If the prompt “still behaves inconsistently”:
+→ few-shot is usually the answer.
+
+---
+
+# 9. PLAN MODE IS FOR ARCHITECTURE
+
+## MUST MEMORIZE
+
+If:
+
+* multi-file
+* architecture
+* multiple valid approaches
+* migrations
+* restructuring
+
+→ PLAN MODE
+
+---
+
+# Direct Execution
+
+Only for:
+
+* scoped fixes
+* obvious bugs
+* simple changes
+
+---
+
+# Exam Trap
+
+They often tempt you with:
+
+> “start implementing incrementally”
+
+Usually wrong for architecture.
+
+---
+
+# 10. BATCH API QUESTIONS ARE EASY POINTS
+
+## VERY HIGH PROBABILITY
+
+Memorize this table:
+
+| Workflow           | API         |
+| ------------------ | ----------- |
+| Blocking PR review | synchronous |
+| Overnight report   | batch       |
+| Weekly audit       | batch       |
+| Nightly generation | batch       |
+
+---
+
+# Must memorize
+
+Batch API:
+
+* 50% cheaper
+* asynchronous
+* polling
+* up to 24h
+* no latency SLA
+* bad for blocking workflows
+* no multi-turn tool calling
+
+---
+
+# HUGE TRAP
+
+Questions involving:
+
+* iterative tool use
+* multi-turn loops
+
+→ batch API usually WRONG.
+
+---
+
+# 11. CLAUDE CODE CONFIGURATION QUESTIONS ARE GUARANTEED
+
+## MUST MEMORIZE
+
+| Item                       | Location              |
+| -------------------------- | --------------------- |
+| Shared slash commands      | `.claude/commands/`   |
+| Personal commands          | `~/.claude/commands/` |
+| Shared MCP                 | `.mcp.json`           |
+| Personal MCP               | `~/.claude.json`      |
+| Always-loaded instructions | `CLAUDE.md`           |
+| On-demand workflows        | Skills                |
+| Conditional file rules     | `.claude/rules/`      |
+
+---
+
+# SUPER IMPORTANT
+
+## `context: fork`
+
+This appeared repeatedly.
+
+Use it when:
+
+* verbose analysis
+* brainstorming
+* exploration
+* discovery
+* codebase scanning
+
+Purpose:
+
+* prevent context pollution
+
+---
+
+# 12. THE EXAM HATES OVER-ENGINEERING
+
+## THIS IS THE SINGLE MOST IMPORTANT META-PATTERN
+
+The correct answer is usually:
+
+* simplest production-safe fix
+* highest leverage fix
+* lowest complexity fix
+
+---
+
+# Examples
+
+Wrong:
+
+* separate ML classifier
+* external orchestration layer
+* huge infrastructure
+* speculative caching
+* complex ranking systems
+
+Correct:
+
+* improve tool descriptions
+* add few-shot examples
+* scoped tool
+* prerequisite gate
+* path-specific rules
+* structured error metadata
+
+---
+
+# REAL EXAM QUESTION PREDICTIONS
+
+These are VERY likely to appear.
+
+---
+
+# Prediction 1
+
+## Question Theme
+
+Tool confusion between similar tools.
+
+Correct answer:
+
+* improve descriptions
+* rename overlapping tools
+* clarify boundaries
+
+---
+
+# Prediction 2
+
+## Question Theme
+
+Batch API misuse.
+
+Correct answer:
+
+* batch only for non-blocking async workflows
+
+---
+
+# Prediction 3
+
+## Question Theme
+
+Subagent missed context.
+
+Correct answer:
+
+* explicit context passing
+
+---
+
+# Prediction 4
+
+## Question Theme
+
+Customer ambiguity.
+
+Correct answer:
+
+* ask for additional identifier
+
+NOT:
+
+* heuristic guessing
+* confidence scoring
+
+---
+
+# Prediction 5
+
+## Question Theme
+
+Large code review inconsistency.
+
+Correct answer:
+
+* per-file pass + integration pass
+
+---
+
+# Prediction 6
+
+## Question Theme
+
+CLAUDE.md not shared.
+
+Correct answer:
+
+* move instructions from user-level to project-level
+
+---
+
+# Prediction 7
+
+## Question Theme
+
+Context pollution after exploration.
+
+Correct answer:
+
+* `context: fork`
+
+---
+
+# Prediction 8
+
+## Question Theme
+
+Extraction hallucinations.
+
+Correct answer:
+
+* nullable/optional schema fields
+
+---
+
+# Prediction 9
+
+## Question Theme
+
+False positives causing distrust.
+
+Correct answer:
+
+* disable noisy categories temporarily
+
+---
+
+# Prediction 10
+
+## Question Theme
+
+Complex request handling.
+
+Correct answer:
+
+* decompose concerns
+* parallel investigation
+* shared context
+* synthesize resolution
+
+---
+
+# TOP 25 ULTRA-HIGH-YIELD FACTS
+
+1. `tool_use` = continue loop.
+2. `end_turn` = stop loop.
+3. Tool descriptions are primary routing signal.
+4. Deterministic enforcement beats prompts.
+5. Subagents do not inherit context.
+6. Coordinator controls all routing.
+7. Scoped tools improve reliability.
+8. Generic tools create misuse.
+9. `tool_choice: any` guarantees tool use.
+10. Forced tool guarantees specific tool.
+11. Nullable fields reduce hallucination.
+12. Batch API is async only.
+13. Batch API not for blocking workflows.
+14. Batch API cannot do multi-turn tool loops.
+15. Plan mode for architecture.
+16. Direct execution for simple fixes.
+17. `context: fork` isolates verbose work.
+18. `.mcp.json` = shared MCP.
+19. `~/.claude.json` = personal MCP.
+20. `.claude/commands/` = shared commands.
+21. Few-shot examples beat prose instructions.
+22. Per-file review beats giant review.
+23. Structured errors enable recovery.
+24. Lost-in-middle requires summaries + structure.
+25. The exam prefers minimal effective fixes.
+
+---
+
+# THE EXAM WRITER’S MINDSET
+
+When answering:
+
+Ask yourself:
+
+## “What would Anthropic consider the safest, clearest, most maintainable production design?”
+
+That is usually the answer.
+
+NOT:
+
+* smartest
+* fanciest
+* most advanced
+* most AI-heavy
+
+The exam prefers:
+
+* clarity
+* reliability
+* explicitness
+* observability
+* maintainability
+* controlled autonomy
+
+---
+
+# FINAL HIGH-SPEED MEMORY HOOKS
+
+## Hooks vs prompts
+
+Hooks = guaranteed
+Prompts = probabilistic
+
+---
+
+## Batch vs sync
+
+Batch = cheap + slow
+Sync = expensive + immediate
+
+---
+
+## Plan vs direct
+
+Architecture = plan
+Simple fix = direct
+
+---
+
+## CLAUDE.md vs Skills
+
+CLAUDE.md = always-on
+Skills = on-demand
+
+---
+
+## Grep vs Glob
+
+Grep = contents
+Glob = paths
+
+---
+
+## Nullable vs required
+
+Nullable prevents fabrication.
+
+---
+
+# FINAL EXAM STRATEGY
+
+During the exam:
+
+1. Eliminate over-engineered answers first.
+2. Prefer deterministic reliability.
+3. Prefer explicit structure.
+4. Prefer scoped responsibilities.
+5. Prefer maintainable/simple solutions.
+6. Watch for keyword traps.
+7. Read the EXACT failure mode carefully.
+8. Identify the ROOT cause.
+9. Choose the LOWEST-level effective fix.
+10. If Anthropic safety/reliability is involved:
+    deterministic answer is usually correct.

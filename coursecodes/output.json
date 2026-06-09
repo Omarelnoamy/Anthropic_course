@@ -1,0 +1,64 @@
+[
+  {
+    "output": "# One-Day Marathon Training Meal Plan\n**Athlete Profile:** 178cm, 68kg | Vegetarian, No Nuts | 20km Long Run Day\n\n---\n\n## BREAKFAST (6:00-6:30 AM)\n*Pre-run fuel - 2 hours before start*\n\n- **2 cups cooked oatmeal** with brown sugar\n- **1 medium banana**, sliced\n- **1 tbsp sunflower seed butter**\n- **1 cup low-fat milk**\n- **Herbal tea or water**\n\n**Nutrition:** ~600 cal | 95g carbs | 18g protein | 10g fat\n\n---\n\n## DURING RUN (8:00-9:30 AM)\n*20km @ ~4:30-5:00 min/km pace*\n\n- **Sports drink:** 500ml (6% carb solution = 30g carbs)\n- **Energy gels:** 2 gels (50g carbs, taken at 5km & 12km marks)\n- **Water:** 150-200ml every 3km\n\n**Total hydration:** ~750-900ml fluid | 80g carbs\n\n---\n\n## POST-RUN RECOVERY (10:00-10:30 AM)\n*Within 30 minutes of finishing*\n\n- **Chocolate milk:** 2 cups (low-fat)\n- **White bread toast:** 2 slices with 1 tbsp honey\n- **1 medium orange**, peeled\n\n**Nutrition:** ~400 cal | 75g carbs | 16g protein | 3g fat\n\n---\n\n## MID-MORNING SNACK (12:30 PM)\n\n- **Smoothie bowl:**\n  - 1 cup Greek yogurt (non-fat)\n  - 1 cup mixed berries\n  - \u00bd cup granola\n  - 1 tbsp sunflower seeds\n  - \u00bd cup honey drizzle\n\n**Nutrition:** ~350 cal | 62g carbs | 18g protein | 5g fat\n\n---\n\n## LUNCH (2:00 PM)\n\n- **Vegetarian pasta:** 2 cups cooked pasta\n- **Marinara sauce:** 1 cup (tomato-based)\n- **Grilled halloumi cheese:** 100g\n- **Side salad:** mixed greens, cucumber, olive oil dressing (1 tbsp)\n- **1 whole wheat roll**\n- **Water:** 500ml\n\n**Nutrition:** ~750 cal | 105g carbs | 28g protein | 15g fat\n\n---\n\n## AFTERNOON SNACK (4:00 PM)\n\n- **Rice cakes:** 3 cakes\n- **Cottage cheese:** \u00bd cup with honey (2 tbsp)\n- **Sliced mango:** 1 cup\n\n**Nutrition:** ~300 cal | 55g carbs | 12g protein | 2g fat\n\n---\n\n## DINNER (7:00 PM)\n\n- **Sweet potato:** 1 large (200g), baked\n- **Lentil bolognese:** 1.5 cups (lentils, tomato sauce, garlic, herbs)\n- **Whole wheat pasta:** 1.5 cups cooked\n- **Steamed broccoli:** 2 cups with lemon juice\n- **Water or herbal tea:** 500ml\n\n**Nutrition:** ~650 cal | 110g carbs | 22g protein | 8g fat\n\n---\n\n## EVENING RECOVERY SNACK (9:30 PM)\n*Optional - if still hungry*\n\n- **Greek yogurt:** 1 cup (non-fat)\n- **Berries:** \u00be cup mixed\n- **Honey:** 1 tbsp\n\n**Nutrition:** ~150 cal | 28g carbs | 15g protein | 0.5g fat\n\n---\n\n## DAILY TOTALS\n\n| Metric | Amount |\n|--------|--------|\n| **Calories** | ~3,750 cal |\n| **Carbohydrates** | ~530g (57% of calories) |\n| **Protein** | ~129g (14% of calories) |\n| **Fat** | ~43g",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "68 kg",
+        "goal": "Marathon training day with 20km long run - maximize carbohydrate loading and maintain hydration for endurance performance",
+        "restrictions": "Vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan spans full day with 4-5 eating occasions",
+        "Total caloric intake supports high-endurance athlete needs (approximately 3000-3500 calories)",
+        "Carbohydrate-focused macronutrient distribution with emphasis on pre/during/post-run fueling",
+        "Includes specific hydration strategy with timing and fluid recommendations"
+      ],
+      "task_description": "write a compact, concise 1 day meal lan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate loading with specific hydration needs"
+    },
+    "score": 9,
+    "reasoning": "The solution comprehensively addresses all mandatory requirements with precise daily totals, detailed macronutrient breakdown, and exact foods with portions and timing. The meal plan demonstrates strong understanding of endurance nutrition with strategic carbohydrate loading before, during, and after the 20km run. All dietary restrictions (vegetarian, no nuts) are properly respected. The plan spans the full day with 6 eating occasions, exceeding the 4-5 minimum. While the caloric total is slightly above the 3000-3500 range and hydration could be marginally higher, these are minor deviations that don't undermine the overall quality. The solution is well-structured, practical, and directly addresses the marathon training goal."
+  },
+  {
+    "output": "# One-Day Performance & Recovery Meal Plan\n**180 cm, 75 kg Male Athlete | Soccer Match Day | Lactose-Free**\n\n---\n\n## Daily Overview\n- **Estimated Calories:** 2,800-3,000 kcal\n- **Protein:** 130-140g (1.7-1.9g/kg)\n- **Carbs:** 420-450g (5.6-6g/kg) \u2013 prioritized for energy\n- **Fat:** 85-95g (1.1-1.3g/kg)\n- **Key Focus:** Carbs for energy, lean protein for recovery, anti-inflammatory foods for injury prevention\n\n---\n\n## BREAKFAST (7:00 AM)\n*Pre-training fuel \u2013 3-4 hours before morning session*\n\n- 2 cups oatmeal cooked with water\n- 1 sliced banana\n- 2 tbsp almond butter\n- 1 tbsp honey\n- Pinch of cinnamon\n- Small glass of orange juice (120 ml)\n\n**Macros:** 550 kcal | 60g carbs | 16g protein | 12g fat\n\n---\n\n## MID-MORNING SNACK (10:00 AM)\n*Post-training recovery*\n\n- 1 rice cake with 2 tbsp tahini\n- 1 medium apple\n- Handful of almonds (30g)\n- Water with electrolytes\n\n**Macros:** 320 kcal | 42g carbs | 10g protein | 14g fat\n\n---\n\n## LUNCH (1:00 PM)\n*Recovery + sustained energy \u2013 3 hours before match*\n\n- 200g grilled chicken breast\n- 1.5 cups white rice\n- Large mixed salad (spinach, tomatoes, cucumbers, bell peppers)\n- 2 tbsp olive oil + lemon dressing\n- Side of steamed broccoli (1 cup)\n\n**Macros:** 750 kcal | 85g carbs | 45g protein | 20g fat\n\n---\n\n## PRE-MATCH SNACK (3:00 PM)\n*1.5-2 hours before kickoff \u2013 easily digestible carbs*\n\n- 1 banana\n- 2 slices white bread with 1 tbsp honey\n- Small handful of raisins (30g)\n- Coconut water (250 ml) or sports drink\n\n**Macros:** 280 kcal | 68g carbs | 5g protein | 1g fat\n\n---\n\n## DURING MATCH\n*(If playing 90+ minutes)*\n\n- Sports drink with 6-8% carbs (250 ml every 15-20 min)\n- OR banana pieces during halftime\n\n**Hydration:** 500-750 ml fluid per hour\n\n---\n\n## POST-MATCH RECOVERY (Within 30-45 min)\n*Immediate carb + protein window*\n\n- Smoothie bowl:\n  - 200ml coconut milk\n  - 1 scoop plant-based protein powder\n  - 1 banana\n  - \u00bd cup frozen berries (blueberries, raspberries)\n  - 1 tbsp coconut oil\n  - Granola (lactose-free)\n\n**Macros:** 420 kcal | 52g carbs | 28g protein | 14g fat\n\n---\n\n## DINNER (7:00 PM)\n*Complete recovery \u2013 2-3 hours post-match*\n\n- 180g baked salmon\n- 1 cup sweet potato (roasted)\n- Roasted asparagus (1.5 cups)\n- Small side salad with olive oil\n- Gluten-free bread (1 slice)\n\n**Macros:** 520 kcal | 48g carbs | 38g protein | 18g fat\n\n---\n\n## EVENING SNACK (Before bed, if needed)\n*Anti-inflammatory & sleep support*\n\n- Handful of walnuts (30g)\n- 2-3 dried figs\n- Chamomile tea\n\n**Macros:** 180 kcal | 16g carbs | 5g protein | 11g fat",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "75 kg",
+        "goal": "Optimize performance and recovery for a soccer match with quick energy availability and injury prevention",
+        "restrictions": "Lactose intolerant"
+      },
+      "solution_criteria": [
+        "Meal plan covers all three meals plus pre/post-match snacks for a single day",
+        "Balanced macronutrients support soccer performance (carbs for energy, protein for recovery, healthy fats)",
+        "All meals and snacks are lactose-free and quick to prepare/consume",
+        "Includes timing guidance for meals relative to training/match schedule"
+      ],
+      "task_description": "write a compact, concise 1 day meal lan for a single athlete",
+      "scenario": "Testing with a mixed-sport athlete (soccer player) requiring balanced macronutrients with quick energy meals and injury prevention considerations"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all three mandatory requirements: it includes daily caloric total and macronutrient breakdown (with minor range ambiguity), provides exact foods with portions and timing for all meals and snacks, and covers the complete day structure. All secondary criteria are met: macronutrients are well-balanced for soccer (carb-prioritized at 56% of calories, adequate protein at 18%, healthy fats at 26%), all foods are lactose-free, timing is provided relative to training/match, and meals are practical for quick consumption. The plan demonstrates strong nutritional knowledge with anti-inflammatory foods (salmon, berries, walnuts) and proper recovery window nutrition. Minor issues include the caloric range presentation and conditional evening snack language, but these do not violate mandatory requirements."
+  },
+  {
+    "output": "# One-Day Athlete Meal Plan\n**Athlete Profile:** 178 cm, 85 kg | Goal: Muscle protein synthesis & recovery post-strength training\n\n---\n\n## DAILY NUTRITION TARGETS\n- **Calories:** 3,000-3,200 kcal\n- **Protein:** 170g (2g per kg bodyweight)\n- **Carbs:** 375-400g (4.4-4.7g per kg)\n- **Fat:** 85-95g (1g per kg)\n\n---\n\n## MEAL PLAN\n\n### **BREAKFAST** (7:00 AM) | 650 kcal | 35g protein\n- 3 whole eggs + 2 egg whites scrambled\n- 1 cup oatmeal with berries\n- 1 tbsp almond butter\n- 1 banana\n- Black coffee or green tea\n\n---\n\n### **MID-MORNING SNACK** (10:00 AM) | 320 kcal | 30g protein\n- Greek yogurt (200g, 0% fat)\n- 50g granola\n- Honey drizzle (1 tbsp)\n\n---\n\n### **LUNCH** (1:00 PM) | 750 kcal | 45g protein\n- 200g grilled chicken breast\n- 1.5 cups brown rice\n- Steamed broccoli (150g) with olive oil (1 tbsp)\n- Side salad with light vinaigrette\n\n---\n\n### **PRE-WORKOUT** (3:30 PM) | 280 kcal | 10g protein\n- Rice cakes (2) with 2 tbsp peanut butter\n- 1 apple\n- Water or sports drink\n\n---\n\n### **POST-WORKOUT** (5:00 PM - within 30 mins) | 450 kcal | 35g protein\n- Protein shake: 40g whey protein, 70g dextrose/maltodextrin\n- 1 large banana\n- 8 oz low-fat milk\n\n---\n\n### **DINNER** (7:00 PM) | 700 kcal | 45g protein\n- 220g lean beef or salmon\n- 2 medium sweet potatoes (baked)\n- Asparagus (150g) saut\u00e9ed in 1 tsp olive oil\n- Small side of mixed vegetables\n\n---\n\n### **EVENING SNACK** (9:00 PM) | 250 kcal | 25g protein\n- Casein protein shake or Greek yogurt (200g)\n- Almonds (30g)\n- Berries\n\n---\n\n## HYDRATION\n- **2.5-3L water** throughout day\n- **400-600mL sports drink** during/post-workout\n- Electrolyte replacement based on sweat rate\n\n---\n\n## KEY NOTES\n\u2713 Protein distributed across 6 meals (25-45g each) for optimal MPS  \n\u2713 Carbs prioritized around training window  \n\u2713 Post-workout nutrition within 30 minutes of training  \n\u2713 Micronutrient-rich foods (berries, leafy greens, sweet potatoes)  \n\u2713 Adjust portions if actual weight gain/loss targets change",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "85 kg",
+        "goal": "Maximize muscle protein synthesis and recovery after heavy strength training",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Includes 4-5 meals with protein distributed across each meal (25-40g per meal)",
+        "Specifies meal timing around workout for optimal recovery nutrition",
+        "Provides compact format suitable for a single day plan"
+      ],
+      "task_description": "write a compact, concise 1 day meal lan for a single athlete",
+      "scenario": "Testing with a strength-based athlete (weightlifter) emphasizing protein distribution across meals and recovery nutrition timing"
+    },
+    "score": 10,
+    "reasoning": "The solution fully satisfies all three mandatory requirements: (1) daily caloric total clearly stated at 3,000-3,200 kcal, (2) complete macronutrient breakdown provided (protein, carbs, fat with per-kg calculations), and (3) all meals include exact foods, precise portions, and specific timing. It exceeds the secondary criteria by providing 6 meals instead of 4-5, with protein consistently distributed at 25-45g per meal, and strategically timed around workout for optimal recovery. The format is compact and well-organized. The plan is evidence-based for a 85kg athlete pursuing muscle protein synthesis and recovery. No mandatory requirements are violated."
+  }
+]

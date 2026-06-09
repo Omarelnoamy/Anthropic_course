@@ -1,0 +1,27 @@
+Give me tbe letter of the answer only 
+
+B
+
+A
+
+A
+
+Why not b
+
+Because B says to distinguish timeouts from permanent failures, which is good engineering practice generally, but it misses the core issue in the question: uncertainty about whether the action actually succeeded.
+
+This is an “ambiguous outcome” / idempotency problem.
+
+The timeout happened after delivery may already have occurred, so blindly retrying can create duplicate notifications.
+A explicitly communicates:
+
+delivery status is unknown
+message may already have been sent
+retrying could duplicate it
+
+That is the safest behavior.
+
+So:
+
+A = handles ambiguity correctly
+B = only classifies retryability, but still risks duplicate side effects

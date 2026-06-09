@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "85 kg",
+      "goal": "Maximize muscle protein synthesis and recovery after heavy strength training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Includes 4-5 meals with protein distributed across each meal (25-40g per meal)",
+      "Specifies meal timing around workout for optimal recovery nutrition",
+      "Provides compact format suitable for a single day plan"
+    ],
+    "task_description": "write a compact, concise 1 day meal lan for a single athlete",
+    "scenario": "Testing with a strength-based athlete (weightlifter) emphasizing protein distribution across meals and recovery nutrition timing"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training day with 20km long run - maximize carbohydrate loading and maintain hydration for endurance performance",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan spans full day with 4-5 eating occasions",
+      "Total caloric intake supports high-endurance athlete needs (approximately 3000-3500 calories)",
+      "Carbohydrate-focused macronutrient distribution with emphasis on pre/during/post-run fueling",
+      "Includes specific hydration strategy with timing and fluid recommendations"
+    ],
+    "task_description": "write a compact, concise 1 day meal lan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate loading with specific hydration needs"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "75 kg",
+      "goal": "Optimize performance and recovery for a soccer match with quick energy availability and injury prevention",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus pre/post-match snacks for a single day",
+      "Balanced macronutrients support soccer performance (carbs for energy, protein for recovery, healthy fats)",
+      "All meals and snacks are lactose-free and quick to prepare/consume",
+      "Includes timing guidance for meals relative to training/match schedule"
+    ],
+    "task_description": "write a compact, concise 1 day meal lan for a single athlete",
+    "scenario": "Testing with a mixed-sport athlete (soccer player) requiring balanced macronutrients with quick energy meals and injury prevention considerations"
+  }
+]
