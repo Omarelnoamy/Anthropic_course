@@ -1,14 +1,13 @@
 import asyncio
-import sys
 import os
-from dotenv import load_dotenv
+import sys
 from contextlib import AsyncExitStack
 
-from mcp_client import MCPClient
 from core.claude import Claude
-
-from core.cli_chat import CliChat
 from core.cli import CliApp
+from core.cli_chat import CliChat
+from dotenv import load_dotenv
+from mcp_client import MCPClient
 
 load_dotenv()
 
@@ -18,9 +17,7 @@ anthropic_api_key = os.getenv("ANTHROPIC_API_KEY", "")
 
 
 assert claude_model, "Error: CLAUDE_MODEL cannot be empty. Update .env"
-assert anthropic_api_key, (
-    "Error: ANTHROPIC_API_KEY cannot be empty. Update .env"
-)
+assert anthropic_api_key, "Error: ANTHROPIC_API_KEY cannot be empty. Update .env"
 
 
 async def main():
